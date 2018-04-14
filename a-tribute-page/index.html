@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Tribute Page !</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Import fonts from Google-->
+<link href="https://fonts.googleapis.com/css?family=Bungee Hairline" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() 
+  {
+    // Title animation
+    $( "#Titulo" ).animate( 
+      {width: "70%",
+       opacity: 0.4,
+       marginLeft: "2.5in",
+       fontSize: "5em",
+       borderWidth: "10px"
+     }, 1000 );
+    // Buttons animations
+    $("#target1, #target2, #target3").css("color", "White");// text color
+    $("#target1, #target2, #target3").css("background", "Black");// background color
+    $("#target1, #target2, #target3").css("box-shadow", "none");// remove buttons blue link when press
+    $(".target:odd").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    //What the buttons will do!
+    $("#target1").click(function()
+    { // Repeat the content from div id="Container"
+       var selected = $(this).attr('src');// image element declaration
+       $("#Container").html("<p>"+'<p>Birth: March 14, 1879 </P> <p>Die: April 18, 1955 at the age of 76 </p> <p>Field: Physics and philosophy </p> <img src="https://cdn.pixabay.com/photo/2016/01/28/21/56/albert-einstein-1167031_960_720.jpg" width="400" align="right"/>' + "</p>"); 
+       $('#Container').css("background-image", "url()"); // Background back to no image
+      
+    });
+    $("#target2").click(function()
+     { 
+       $("#Container").html(" <p><h4>1879</h4> The year he was born to Hermann Einstein and Pauline Koch.<h4>1884</h4> When he was only five years old his father showed Albert a pocket compass and he was fascinated by the thought that something unseen was moving the needle.<h4>1889</h4> Max Talmud introduced the Albert to books on science and mathematics. Albert starts his quest for facts and information available about the sciences. He attends the Luitpold-Gymnasium in Munich for the next six years. <h4>1896</h4> Albert graduates from high school at the age of 17 and enrols at the Federal Polytechnic in Zurich. He renounces his German citizenship. <h4>1900</h4> Albert Einstein graduates from ETH with a degree in physics. <h4>1905</h4> His famous equation e=mc^2 is born which is the root of the 'Theory of Relativity'. <h4>1907</h4> He apply the laws of gravity to his theory of relativity. <h4>1911</h4> Predicts bending of light later on he is appointed professor of theoretical physics at the 'German University of Prague'. <h4>1916</h4>	His General Theory of Relativity is published. <h4>1917</h4> Writes his first paper on cosmology at this same year he is appointed director of 'Kaiser Wilhelm Institute' for Physics in Berlin. <h4>1939</h4> The start of 'World War 2' and Albert Einstein warns President Roosevelt that Germany might build an atomic bomb. He then recommends nuclear research to be conducted by the U.S. <h4>1940</h4> He becomes a citizen of the United States but also retains his Swiss citizenship. <h4>1955</h4> Einstein dies due to complications of internal bleeding he was 76 years old.");
+  // Calling background image for div element!
+      //https://cdn.pixabay.com/photo/2016/03/13/06/33/albert-1253300_960_720.jpg
+      $('#Container').css("background-image", "url(https://cdn.pixabay.com/photo/2016/03/13/06/33/albert-1253300_960_720.jpg)"); 
+     
+    });
+    $("#target3").click(function()
+     {
+       $("#Container").html(" <p>  This is a tribute website by Robert Coleman 2018 </p>");
+       $('#Container').css("background-image", "url()"); // Background back to no image
+    });
+  });
+</script>
+<!-- CSS-->
+
+<div class="container-fluid">
+  <h3 id="Titulo" class="color-text">Albert Einstein</h3>
+  <div class="row">
+    <div class="col-xs-5">
+      <div class="well" id="left-well">
+        <p><button class="btn target" id="target1">Home</button></p>
+        <p><button class="btn target" id="target2">Timeline</button></p>
+        <p><button class="btn target" id="target3">About</button></p>
+      </div>
+    </div>
+       <!-- Information -->
+    <div id="Container">
+       <!--This gets update by the jQuery code on top-->
+        <!--Home page data --><p><p>Birth: March 14, 1879 </P> <p>Die: April 18, 1955 at the age of 76 </p> <p>Field: Physics and philosophy</p><img src="https://cdn.pixabay.com/photo/2016/01/28/21/56/albert-einstein-1167031_960_720.jpg" width="400"/></p>
+    </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+</body>
+
+</html>

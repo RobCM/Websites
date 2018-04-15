@@ -1,7 +1,12 @@
- .color-text {
+  .color-text {
     color: orange;
   }
-
+h5 {
+  color: lightgray;
+}
+ h4 {
+    color: orange;
+  }
   h3 {
     font-size: 16px;
     font-family: Bungee Hairline;
@@ -9,9 +14,10 @@
   #Container {
      margin: 25px 50px;
      background-repeat: no-repeat;
-     background-size: 2000px 900px;
+     background-size: 1024px 968px;   
    }
   button {
      margin: 5px 5px;
    }
+  
   

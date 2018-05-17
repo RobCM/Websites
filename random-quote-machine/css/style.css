@@ -1,0 +1,52 @@
+.container-fluid 
+{
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 450px) 
+{
+  .container-fluid 
+  {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+h2 {
+    font-size: 40px;
+    font-family: Slackey;
+    color: #a89c99; 
+  }
+h6 {
+   color: #a89c99;
+}
+p {
+  margin-left: 55px
+}
+/* Div looks*/
+#body {
+    border-style: none;
+    background: gold;
+    width: 600px;
+    height: 250px;
+    border-radius: 100px 100px / 220px;
+  /* Object shadow*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#qoutes {
+   font-size: 25px;
+   font-family: Amatic SC;
+   color: #a89c99; 
+}
+/* Button position*/
+#gq {
+    margin-left:355px 
+}
+/* Button looks*/
+.btn {
+     background-color: #a89c99; 
+     border: none;
+     padding: 9px 5px;
+     font-size: 17px;
+  /* Object shadow*/
+  box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

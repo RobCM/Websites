@@ -14,7 +14,7 @@ $(document).ready(function()
             switch(random)
             {
               case 1:
-                quoteString = "Reality really is a theatre. Thereâ€™s no other way to describe it. Itâ€™s all so nonsensical, ridiculous and chaotic. -Joe Rogan"
+                quoteString = "Reality really is a theatre. There's no other way to describe it. It's all so nonsensical, ridiculous and chaotic. -Joe Rogan"
                 $("#qoutes").html(quoteString); 
                 // Set author image
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/joerogan.jpg)");

@@ -75,23 +75,23 @@ background-size:16px 16px;
   margin: 0.9px;
   width: 250px; 
   height: 300px; 
-  -webkit-clip-path: polygon(0 0, 69% 0, 100% 100%, 28% 100%);
+ 
 } 
 #imageTwo { 
   margin: 0.9px;
   width: 250px;
   height: 300px;
-  -webkit-clip-path: polygon(0 0, 69% 0, 100% 100%, 28% 100%);
+ 
 }
 #imageThree { 
   margin: 0.9px;
   width: 300px;
   height: 300px;
-  -webkit-clip-path: polygon(0 0, 69% 0, 100% 100%, 28% 100%); 
+   
 }
 #imageFour { 
   margin: 0.9px;
   width: 300px;
   height: 300px;
-  -webkit-clip-path: polygon(0 0, 69% 0, 100% 100%, 28% 100%); 
+ 
 }

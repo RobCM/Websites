@@ -1,0 +1,39 @@
+/* Compose body*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+/* Background look*/
+.bgImage {
+    background-image: url("https://robcm.github.io/Websites/Local Weather/res/WallPapper.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Banner text*/
+h{
+  font-size: 65px;
+  font-family: Sacramento;
+  color: #006680;
+}
+h3{
+  font-size: 35px;
+  color: #006680;
+}
+/* Buttons look*/
+.btn {
+    background-color: #006680; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button1 {
+  border-radius: 5%;
+}
+.button2 {
+  border-radius: 5%;
+}

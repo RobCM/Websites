@@ -34,7 +34,6 @@ var animate, left=0, imgObj=null;
  */
 var api = "https://fcc-weather-api.glitch.me/api/current?";//Free Code Camp Weather API
 var lat, lon;
-var tempUnit = 'C';
 var currentTempInCelsius;
 
 $( document ).ready(function()

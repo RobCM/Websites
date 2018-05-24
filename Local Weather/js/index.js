@@ -1,23 +1,23 @@
 /* 
   Function for animation-- plain JavaScript
  */
-var animate, left=0, imgObj=null;
+var animate, left=0, frameObj=null;
     function init()
 	  {
-        imgObj = document.getElementById('frame');// the whole table frame!
-        imgObj.style.position= 'absolute';
-        imgObj.style.top = '10px';
-        imgObj.style.left = '-300px';
-        imgObj.style.visibility='hidden';
+        frameObj = document.getElementById('frame');// the whole table frame!
+        frameObj.style.position= 'absolute';
+        frameObj.style.top = '10px';
+        frameObj.style.left = '-300px';
+        frameObj.style.visibility='hidden';
         moveRight();
       }
     function moveRight()
 	  {
-        left = parseInt(imgObj.style.left, 10);
+        left = parseInt(frameObj.style.left, 10);
           if (10 >= left) 
 		  {
-            imgObj.style.left = (left + 10) + 'px';
-            imgObj.style.visibility='visible';
+            frameObj.style.left = (left + 10) + 'px';
+            frameObj.style.visibility='visible';
             animate = setTimeout(function(){moveRight();},20); // call moveRight in 25msec
           } 
       else {

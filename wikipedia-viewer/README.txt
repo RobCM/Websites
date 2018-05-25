@@ -1,0 +1,1 @@
+This is a simple Wikipedia search using wikipedia API to connect to the main search engine.

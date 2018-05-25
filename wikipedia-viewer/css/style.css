@@ -1,0 +1,55 @@
+.container-fluid 
+{
+  margin:  0 auto;
+  max-width: 1200px;
+  min-width: 460px;
+}
+
+/* Compose body*/
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+/*Title */
+h3{
+  color: gray;
+  font-family: Pacifico;
+}
+/* Title position */
+#Titulo{
+  margin-left: 190px; 
+  margin-top: 9px; 
+  margin-right: 45px; 
+}
+/*Search bar looks */
+#SearchBar{
+    background-color: lightblue;
+    width: 400px;
+    border: none;
+}
+/* Button's container */
+#btnContainer{
+  margin-left: 190px; 
+  margin-top: 8px; 
+  margin-right: 45px; 
+}
+/* Button's look */
+.btn{
+   background-color: #b9b7b6; 
+   border: none;
+}
+/* Once mouse hovers on button */
+.btn:hover {
+   color: black;
+   background-color: white; 
+}
+/* LINKS LOOK */
+/* unvisited link */
+a:link {
+    color: lightblue;
+}
+/* mouse over link */
+a:hover {
+    color: gray;
+}

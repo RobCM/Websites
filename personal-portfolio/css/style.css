@@ -75,23 +75,24 @@ background-size:16px 16px;
   margin: 0.9px;
   width: 250px; 
   height: 300px; 
- 
 } 
 #imageTwo { 
   margin: 0.9px;
   width: 250px;
   height: 300px;
- 
 }
 #imageThree { 
   margin: 0.9px;
   width: 300px;
   height: 300px;
-   
 }
 #imageFour { 
   margin: 0.9px;
   width: 300px;
   height: 300px;
- 
+}
+#imageFive { 
+  margin: 0.9px;
+  width: 250px;
+  height: 300px;
 }

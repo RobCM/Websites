@@ -1,0 +1,66 @@
+/* Compose website dimensions*/
+.container{
+  max-width:500px;
+  /* Object shadow*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 
+}
+/*Title */
+h2{
+  color: white;
+  width: 390px;
+  font-family: Audiowide;
+  text-shadow: -1px 0 black, 0 1px black, 4px 0 black, 0 -1px black;
+}
+/* Title position */
+#Titulo{
+  margin-left: 20px; 
+  margin-top: 10px;
+}
+/* Cell dimensions */
+#cell{
+  height: 130px;
+  margin-top: 10px;
+  width:500px;
+  background: linear-gradient(to top, white, #ccc3c1);
+  /* Object shadow*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+/* back ground of div to display data  */
+#output{
+  background-color: #aca8a7;
+}
+/* User image dimensions */
+#userImage{
+  -moz-border-radius: 100px / 50px; 
+  -webkit-border-radius: 100px / 50px; 
+  border-radius: 100px / 50px;
+  /* Object shadow*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 
+}
+/* User name look*/
+#username{
+  color: white;
+  font-family: Audiowide;
+}
+/* Status look*/
+h7{
+  color: green;
+  font-size: 10px;
+}
+/* Signature */
+h6{
+  color: white;
+  margin-top: 30px;
+  margin-left: 400px;
+}
+/* video fullscreen background  */
+#bgvideo{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}

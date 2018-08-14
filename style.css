@@ -1,0 +1,54 @@
+.item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+  
+  .item2 {
+    background: White;
+    grid-area: content;
+    grid-template-columns:auto 1fr;
+  }
+  
+  .item3 {
+    background: lightpink;
+    grid-area: footer;
+  }
+  
+  .Des {
+    background: White;
+  }
+  
+  .FORM {
+    background: BlanchedAlmond;
+  }
+  
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: BlanchedAlmond;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header"
+      "advert content"
+      "footer footer";
+  }
+h1{
+  font-family: Amatic SC;
+  color: Gray;
+  padding-left: 0.5em;
+  margin: 0;
+}
+p{
+  font-size: 20px;
+  padding-left: 1em;
+}
+h6{
+  font-family: Amatic SC;
+  color: Gray;
+  margin: center;
+  padding-left: 50em;
+}

@@ -1,0 +1,1 @@
+This is a product web page of the "fictional" company Skynet from the movie Terminator.

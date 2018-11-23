@@ -4,18 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Personal Portfolio</title>
-  
-  
+   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
   
 </head>
 
 <body>
 
-  <!-- Import fonts from Google-->
+<!-- Import fonts from Google-->
 <link href="https://fonts.googleapis.com/css?family=Fruktur" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -24,13 +21,14 @@
   { 
     // Title animation
     var Ti = $("#Titulo");
-        Ti.animate({fontSize: '8em'}, 500);
+        Ti.animate({fontSize: '6em'}, 500);
     // Fade project images
     $('#imageOne').fadeOut(0.1).fadeIn(1500);
     $('#imageTwo').fadeOut(0.1).delay(1000).fadeIn(1500);
     $('#imageThree').fadeOut(0.1).delay(2000).fadeIn(1500);
     $('#imageFour').fadeOut(0.1).delay(2500).fadeIn(1500);
     $('#imageFive').fadeOut(0.1).delay(2900).fadeIn(1500);
+	$('#imageSix').fadeOut(0.1).delay(2950).fadeIn(1500);
    }); 
   </script>
 
@@ -53,7 +51,7 @@
   <tr>
       <th><div id="imageFrame"> <img id="profileImage" align="left" src="https://robcm.github.io/Websites/personal-portfolio/res/MyprofileImage.jpg" </img></div></th>
       <th><div id="Contenido"> 
-     <h5 align="center">My name is Robert Coleman a passionate software developer from Austin TX. Some of the programming languages I have work with include Java and C++. I also have experience developing Android apps and websites using Java, JavaScript, HTML, PHP, SQL, jQuery, and CSS.</h5>
+       <h5 id="bio">My name is Robert Coleman a passionate software developer from Austin TX. Some of the programming languages I have work with include Java and C++. I also have experience developing Android apps and websites using Java, JavaScript, HTML, PHP, SQL, jQuery, and CSS.</h5>
    </div></th>
   </tr>
 </table>
@@ -75,6 +73,8 @@
   
   <a href="https://robcm.github.io/Websites/twitchtv-json-api/"  target="_blank"><img align="left" id="imageFive"src="https://robcm.github.io/Websites/twitchtv-json-api/websiteScreen_Shot.png"</img></a>
   
+  <a href="https://github.com/RobCM/A-Java-weather-parser-RSS-feed"  target="_blank"><img align="left" id="imageSix"src="https://raw.githubusercontent.com/RobCM/A-Java-weather-parser-RSS-feed/master/Screen%20Shots/ProgramScreenS_1.png"</img></a>
+  
 </table> 
 
    <ul id="theBar"> 
@@ -84,8 +84,5 @@
   </div>
 </div>
   
-  
-
 </body>
-
 </html>

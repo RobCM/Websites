@@ -19,18 +19,18 @@ function userOffline(channelName)
   });
 }
   
-//function channelsCheck(channelName)
-//{
-   //$.getJSON("https://api.twitch.tv/kraken/streams?channel="+channelName+"&client_id=e35gnrxztsw5nocsje75p93hlq4hkkn",function(json){
-   // if(json.stream == null)
-    // {
-       //userOffline(channelName);// Calling function!
-    // }
-    // else{
+function channelsCheck(channelName)
+{
+   $.getJSON("https://api.twitch.tv/kraken/streams?channel="+channelName+"&client_id=e35gnrxztsw5nocsje75p93hlq4hkkn",function(json){
+   if(json.stream == null)
+   {
+       userOffline(channelName);// Calling function!
+    }
+    else{
        userOnline(channelName);
-     //}
-   //})
- //}
+    }
+   })
+ }
  for (i=0; i < channels.length; i++){
    channelsCheck(channels[i])
  }

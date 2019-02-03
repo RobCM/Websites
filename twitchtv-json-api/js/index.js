@@ -2,7 +2,7 @@
 $(document).ready(function()
 {
   /* Using an array for users/channels */
-  var channels = ["ESL_SC2", "OgamingSC2", "freecodecamp", "Ninja","xeya_tv", "khloey28", "SkipNhO", "Ko0416", "KatGunn", "Lauralania","TimTheTatman"];  
+  var channels = ["JoshOG", "nurseos", "SolaryFortnite", "SCGTour", "GirlGamerChas", "ESL_SC2", "OgamingSC2", "freecodecamp"];  
 /* Function for who is online */ 
 function userOnline(channelName)
 {

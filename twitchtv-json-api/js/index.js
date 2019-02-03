@@ -14,7 +14,7 @@ function userOnline(channelName)
 /* Function for who is offline */  
 function userOffline(channelName)
 {
-    $.getJSON("https://wind-bow.glitch.me/twitch-api/channels/"+channelName+"", function(json){
+    $.getJSON("https://api.twitch.tv/kraken/streams?channel="+channelName+"&client_id=e35gnrxztsw5nocsje75p93hlq4hkkn", function(json){
      
     $("#output").prepend("<div id=cell class='row well'><div class='col'><img id=userImage height=100px width=100px  src="+json.logo+"></div><div class='col'>"+"<a target=# id=username href="+json.url+">"+json.display_name+"</a>"+"</div><div class='col'><img id=offline height=55px width=55px  src=https://cdn0.iconfinder.com/data/icons/connection/128/icon-12.png></div></div>");  
   });
@@ -22,7 +22,7 @@ function userOffline(channelName)
   
 function channelsCheck(channelName)
 {
-   $.getJSON("https://wind-bow.glitch.me/twitch-api/streams/"+channelName+"",function(json){
+   $.getJSON("https://api.twitch.tv/kraken/streams?channel="+channelName+"&client_id=e35gnrxztsw5nocsje75p93hlq4hkkn",function(json){
      if(json.stream == null)
      {
        userOffline(channelName);// Calling function!
@@ -32,7 +32,7 @@ function channelsCheck(channelName)
      }
    })
  }
- for (i=0; i < channels.length; i++){
-   channelsCheck(channels[i])
+ for (i=0; i < channel.length; i++){
+   channelsCheck(channel[i])
  }
 });

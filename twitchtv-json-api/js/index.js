@@ -32,7 +32,7 @@ function channelsCheck(channelName)
      }
    })
  }
- for (i=0; i < channel.length; i++){
-   channelsCheck(channel[i])
+ for (i=0; i < channels.length; i++){
+   channelsCheck(channels[i])
  }
 });

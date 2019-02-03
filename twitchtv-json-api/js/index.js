@@ -23,12 +23,12 @@ function userOffline(channelName)
 function channelsCheck(channelName)
 {
    $.getJSON("https://api.twitch.tv/kraken/streams?channel="+channelName+"&client_id=e35gnrxztsw5nocsje75p93hlq4hkkn",function(json){
-     if(json.stream_type == "live")
+    if(json.stream == null)
      {
-       userOnline(channelName);// Calling function!
+       userOffline(channelName);// Calling function!
      }
      else{
-       userOffline(channelName);
+       userOnline(channelName);
      }
    })
  }

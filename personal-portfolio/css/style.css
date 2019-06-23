@@ -7,11 +7,11 @@ body{
 div{
     margin:  0 auto;
 }
- h3 {
+h3 {
     font-family: Fruktur;
     color: White;
 	text-align: center;   
-  }
+}
 h6{
 	color: white;
 }
@@ -34,6 +34,11 @@ h6{
     width: 10%;
 }
 #icon:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.projectImages:hover{
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);

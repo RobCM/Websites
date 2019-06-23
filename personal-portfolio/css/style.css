@@ -65,13 +65,14 @@ h6{
     filter: grayscale(100%);
 }
 #divider {
+	padding: 5px;
     border-radius: 10px;  
     width: 800px;
     height: 40px;
     background: radial-gradient(black 15%, transparent 6%) 0 0,radial-gradient(black 15%, transparent 6%) 8px 8px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color:#404040;
+	background-color:#282828;
 	background-size:16px 16px; 
 }
 #imageOne { 

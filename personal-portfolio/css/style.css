@@ -8,13 +8,15 @@ div{
     margin:  0 auto;
 }
  h3 {
-    font-size: 25px;
     font-family: Fruktur;
     color: White;
 	text-align: center;   
   }
 h6{
-  color: white;
+	color: white;
+}
+#contente_table {
+	width: 100px;
 }
 #theBar{ 
     border-radius: 100px;
@@ -22,10 +24,10 @@ h6{
     width: 800px;
     height: 60px;
     background: radial-gradient(black 15%, transparent 16%) 0 0,radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;   
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;   
 }
 #icon{
     height: 40px;
@@ -37,21 +39,21 @@ background-size:16px 16px;
     transform: scale(0.8);
 }
 #Contenido { 
-  width: 500px; 
-  height: 100px; 
-  background: White; 
+	width: 500px; 
+	height: 100px; 
+	background: White; 
 }
 #Contenido { 
-  width: 520px; 
-  height: 150px; 
-  background: White; 
-  position: relative; 
-  -moz-border-radius: 10px; 
-  -webkit-border-radius: 10px; 
-  border-radius: 10px; 
+	width: 590px; 
+	height: 150px; 
+	background: White; 
+	position: relative; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 
 } 
 #Contenido:before { 
-  content:""; position: absolute; right: 100%; top: 26px; width: 0; height: 0; border-top: 13px solid transparent; border-right: 26px solid White; border-bottom: 13px solid transparent; 
+	content:""; position: absolute; right: 100%; top: 26px; width: 0; height: 0; border-top: 13px solid transparent; border-right: 26px solid White; border-bottom: 13px solid transparent; 
 }
 #bio {
 	margin-left: 10px;
@@ -67,38 +69,38 @@ background-size:16px 16px;
     width: 800px;
     height: 40px;
     background: radial-gradient(black 15%, transparent 6%) 0 0,radial-gradient(black 15%, transparent 6%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#404040;
-background-size:16px 16px; 
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#404040;
+	background-size:16px 16px; 
 }
 #imageOne { 
-  margin: 0.9px;
-  width: 250px; 
-  height: 300px; 
+	margin: 0.9px;
+	width: 300px; 
+	height: 300px; 
 } 
 #imageTwo { 
-  margin: 0.9px;
-  width: 250px;
-  height: 300px;
+	margin: 0.9px;
+	width: 250px;
+	height: 300px;
 }
 #imageThree { 
-  margin: 0.9px;
-  width: 300px;
-  height: 300px;
+	margin: 0.9px;
+	width: 250px;
+	height: 300px;
 }
 #imageFour { 
-  margin: 0.9px;
-  width: 300px;
-  height: 300px;
+	margin: 0.9px;
+	width: 300px;
+	height: 300px;
 }
 #imageFive { 
-  margin: 0.9px;
-  width: 250px;
-  height: 300px;
+	margin: 0.9px;
+	width: 250px;
+	height: 300px;
 }
 #imageSix {
-  margin: 0.9px;
-  width: 250px;
-  height: 300px;
+	margin: 0.9px;
+	width: 250px;
+	height: 300px;
 }

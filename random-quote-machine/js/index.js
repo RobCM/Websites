@@ -1,21 +1,21 @@
 $(document).ready(function() 
 {  
-    $('#banner').fadeOut(0.1).fadeIn(3000);       
-    $('#body').fadeOut(0.1).delay(1000).fadeIn(3000); 
-    $('#datedone').fadeOut(0.1).delay(1000).fadeIn(3000); 
-     // Random quote at page load as well!
-    genRand();
+  $('#banner').fadeOut(0.1).fadeIn(3000);       
+  $('#body').fadeOut(0.1).delay(1000).fadeIn(3000); 
+  $('#datedone').fadeOut(0.1).delay(1000).fadeIn(3000); 
+  // Random quote at page load as well!
+  genRand();
   
      // randomness function!
      function genRand()
      {
-        var random = Math.floor(Math.random() * 8) + 1;
+        var random = Math.floor(Math.random() * 9) + 1;
             var quoteString;
             // get the quotes which are in the switch statement
             switch(random)
             {
               case 1:
-                quoteString = "Reality really is a theatre. There's no other way to describe it. It's all so nonsensical, ridiculous and chaotic. -Joe Rogan"
+                quoteString = "Reality really is a theatre. There’s no other way to describe it. It’s all so nonsensical, ridiculous and chaotic. -Joe Rogan"
                 $("#qoutes").html(quoteString); 
                 // Set author image
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/joerogan.jpg)");
@@ -33,40 +33,47 @@ $(document).ready(function()
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MarkT.png)");   
               break;
                 
-               case 4:
+              case 4:
                  quoteString = "The Universe is under no obligation to make sense to you. -Neil Degrasse"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/NeilDT.png)");   
               break;
                 
-                case 5:
+              case 5:
                  quoteString = "If you expect nothing from anybody, you're never disappointed. -Sylvia Plath"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/SylviaPlath.png)");   
               break;
                 
-                case 6:
+              case 6:
                  quoteString = "Stay committed to your decisions, but stay flexible in your approach. -Tony Robbins"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/TR.png)");   
               break;
                 
-                case 7:
+              case 7:
                  quoteString = "Age does not protect you from love. But love, to some extent, protects you from age. -Anais Nin"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/AnaisN.png)");   
               break;
                 
-                 case 8:
+              case 8:
                  quoteString = "The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/EleanorR.png)");   
+              break;
+			  
+			  case 9:
+                 quoteString = "I can't jump high, so I jump from high places. -Mick Foley"
+                $("#qoutes").html(quoteString);
+                $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MikeF.png)");   
               break;
               
               default:
                 // Nothing!
             }
         }
+		
     // button action
     $("#gq").click(function () {
         $("#qoutes").fadeOut("slow", function () {

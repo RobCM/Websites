@@ -63,9 +63,7 @@ $(document).ready(function()
               break;
               
               default:
-                quoteString = " "
-                $("#qoutes").html(quoteString); 
-                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/qouteSim.png)");
+                // Nothing!
             }
         }
     // button action

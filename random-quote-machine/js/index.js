@@ -1,10 +1,11 @@
 $(document).ready(function() 
 {  
-  $('#banner').fadeOut(0.1).fadeIn(3000);       
-  $('#body').fadeOut(0.1).delay(1000).fadeIn(3000); 
-  $('#datedone').fadeOut(0.1).delay(1000).fadeIn(3000); 
-  // default image for the author
-  $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/qouteSim.png)");
+    $('#banner').fadeOut(0.1).fadeIn(3000);       
+    $('#body').fadeOut(0.1).delay(1000).fadeIn(3000); 
+    $('#datedone').fadeOut(0.1).delay(1000).fadeIn(3000); 
+     // Random quote at page load as well!
+    genRand();
+  
      // randomness function!
      function genRand()
      {

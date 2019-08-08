@@ -63,13 +63,13 @@ $(document).ready(function()
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/EleanorR.png)");   
               break;
 			  
-			  case 9:
+              case 9:
                  quoteString = "I can't jump high, so I jump from high places. -Mick Foley"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MikeF.png)");   
               break;
 			  
-			  case 10:
+	      case 10:
                  quoteString = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity. - Martin Luther King, Jr."
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MLK.png)");   

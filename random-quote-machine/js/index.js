@@ -70,7 +70,7 @@ $(document).ready(function()
               break;
 			  
 	      case 10:
-                 quoteString = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity. - Martin Luther King, Jr."
+                 quoteString = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity.<br> - Martin Luther King, Jr."
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MLK.png)");   
               break;

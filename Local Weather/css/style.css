@@ -10,6 +10,7 @@ body, html {
 	width: 600px;
 	height: 600px;
 	background-color: #90c7db;
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(94,129,155,0.9107843821122199) 0%, rgba(144,199,219,1) 74%, rgba(0,212,255,1) 100%);
 	/* Make container as a circle shape */
 	border-radius: 300px;
 	/* Object shadow */

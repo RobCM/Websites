@@ -11,6 +11,9 @@ body, html {
 }
 /* Child container */
 #container_div {
+	margin: auto; 
+	width: 200px;
+	height: 200px;
 }
 /* Banner text*/
 h{

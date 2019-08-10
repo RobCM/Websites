@@ -4,16 +4,22 @@ body, html {
     margin: 0;
 	background-color: #c4e7f5;	
 }
-/* Child container */
+/* Container */
 #container_div {
-    margin-top: 100px;	
-	width: 350px;
+    margin: 80px auto;	
+	width: 600px;
 	height: 600px;
 	background-color: #90c7db;
 	/* Make container as a circle shape */
-	
+	border-radius: 300px;
 	/* Object shadow */
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* */
+#child_div{
+	position: absolute;
+	margin-top: 85px;
+	width: 575px;
 }
 /* Banner text*/
 h{

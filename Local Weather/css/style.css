@@ -3,13 +3,11 @@ body, html {
     height: 100%;
     margin: 0;
 }
-/* Background look*/
-.bgImage {
-    background-image: url("https://robcm.github.io/Websites/Local Weather/res/WallPapper.png");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Main container */
+#main_div {
+}
+/* Child container */
+#container_div {
 }
 /* Banner text*/
 h{

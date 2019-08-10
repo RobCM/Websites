@@ -1,35 +1,4 @@
 /* 
-  Function for animation-- plain JavaScript
- */
-var animate, left=0, frameObj=null;
-    function init()
-	  {
-        frameObj = document.getElementById('frame');// the whole table frame!
-        frameObj.style.position= 'absolute';
-        frameObj.style.top = '10px';
-        frameObj.style.left = '-300px';
-        frameObj.style.visibility='hidden';
-        moveRight();
-      }
-    function moveRight()
-	  {
-        left = parseInt(frameObj.style.left, 10);
-          if (10 >= left) 
-		  {
-            frameObj.style.left = (left + 10) + 'px';
-            frameObj.style.visibility='visible';
-            animate = setTimeout(function(){moveRight();},20); // call moveRight in 25msec
-          } 
-      else {
-           stop();
-       }
-      }  
-     function stop()
-     {
-       clearTimeout(animate);
-      }
-      window.onload = function() {init();};// When webpage reloads!
-/* 
   Function for data ---unsing jQuery for this!
  */
 var api = "https://fcc-weather-api.glitch.me/api/current?";//Free Code Camp Weather API

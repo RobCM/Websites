@@ -9,7 +9,7 @@ $(document).ready(function()
      // randomness function!
      function genRand()
      {
-        var random = Math.floor(Math.random() * 10) + 1;
+        var random = Math.floor(Math.random() * 11) + 1;
             var quoteString;
             // get the quotes which are in the switch statement
             switch(random)
@@ -63,16 +63,22 @@ $(document).ready(function()
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/EleanorR.png)");   
               break;
 			  
-              case 9:
+			  case 9:
                  quoteString = "I can't jump high, so I jump from high places. -Mick Foley"
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MikeF.png)");   
               break;
 			  
-	      case 10:
-                 quoteString = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity.<br> - Martin Luther King, Jr."
+			  case 10:
+                 quoteString = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity. <br>- Martin Luther King, Jr."
                 $("#qoutes").html(quoteString);
                 $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/MLK.png)");   
+              break;
+			  
+			   case 11:
+                 quoteString = "Everything comes to he who waits... and I have waited so very long for this moment. <br> -Skeletor"
+                $("#qoutes").html(quoteString);
+                $("#authorImage").css("background-image","url(https://robcm.github.io/Websites/random-quote-machine/res/Skeletor.png)");   
               break;
               
               default:

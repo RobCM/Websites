@@ -1,8 +1,10 @@
 /* Compose body*/
-body, html {
+body {
     height: 100%;
     margin: 0;
-	background-color: #c4e7f5;	
+	background-image: url(https://raw.githubusercontent.com/RobCM/Websites/master/Local%20Weather/backimage.jpg);	
+	background-position: center;
+	background-repeat: no-repeat;
 }
 /* Container */
 #container_div {

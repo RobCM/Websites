@@ -1,7 +1,5 @@
 /* 
 	Using jQuery for API function 
-	The latest v5 twitch api seem to no work to see who is online or not.
-	That is it does not return ant value to indicate if the user is online no stream object!
 */
 $(document).ready(function()
 {
@@ -23,7 +21,7 @@ $(document).ready(function()
 	}
 	  
 	function channelsCheck(channelName){
-	   $.getJSON("https://api.twitch.tv/kraken/channels/"+channelName+"/?client_id=779qgezzt8ga2ejsy4v6iarqq1p2gd&callback/",function(json){
+	   $.getJSON("https://api.twitch.tv/kraken/streams/"+channelName+"/?client_id=779qgezzt8ga2ejsy4v6iarqq1p2gd&callback/",function(json){
 		 if(json.stream === null){
 		   userOffline(channelName);// Calling function!
 		 }

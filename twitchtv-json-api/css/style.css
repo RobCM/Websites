@@ -18,7 +18,7 @@ h2{
 }
 /* Cell dimensions */
 #cell{
-  height: 130px;
+  height: 190px;
   margin-top: 10px;
   width:500px;
   background: linear-gradient(to top, white, #ccc3c1);

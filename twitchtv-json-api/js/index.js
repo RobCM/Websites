@@ -4,7 +4,7 @@
 $(document).ready(function()
 {
 	/* Using an array for users/channels */
-	var channels = ["ESL_SC2", "OgamingSC2", "freecodecamp", "Ninja","xeya_tv", "khloey28", "SkipNhO", "Ko0416", "KatGunn"];  
+	var channels = ["OgamingSC2", "xeya_tv", "SypherPK", "Asmongold", "AnneMunition", "StarCraft", "TheQueenViper"];  
 	/* Function for who is online */ 
 	function userOnline(channelName){
 		$.getJSON("https://api.twitch.tv/kraken/channels/"+channelName+"/?client_id=779qgezzt8ga2ejsy4v6iarqq1p2gd&callback/", function(json){

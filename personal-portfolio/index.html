@@ -20,8 +20,8 @@
   $(document).ready(function() 
   { 
     // Title animation
-    var Ti = $("#Titulo");
-        Ti.animate({fontSize: '5.6em'}, 500);
+    var Ti = $("#Titulo_text");
+        Ti.animate({fontSize: '5.6em'}, 700);
     // Fade project images
     $('#imageOne').fadeOut(0.1).fadeIn(1500);
     $('#imageTwo').fadeOut(0.1).delay(1000).fadeIn(1500);
@@ -34,7 +34,9 @@
 
  <div class="container-fluid">
    <div class="row">
-     <p><h3 id="Titulo" class="color-text">Software Developer</h3></p>
+	 <div id="Titulo">
+		<p><h3 id="Titulo_text" class="color-text">Software Developer</h3></p>
+	 </div>
     
    <ul id="theBar">
       <a href= http://www.linkedin.com/in/robert-coleman-71a082b2 target="_blank">
@@ -46,49 +48,53 @@
 " hspace="10"> 
      </a>
    </ul>
-  
-<table>
-  <tr>
-      <td>
-		<div id="imageFrame"> 
-			<img id="profileImage" align="left" src="https://robcm.github.io/Websites/personal-portfolio/res/MyprofileImage.jpg">
-		</div>
-	  </td>
-      <td>
-		<div id="Contenido"> 
-			<h5 id="bio">My name is Robert Coleman a passionate software developer from Austin TX. Some of the programming languages I have work with include Java and C++. I also have experience developing Android apps and websites using Java, JavaScript, HTML, PHP, SQL, jQuery, and CSS.</h5>
-        </div>
-      </td>
-  </tr>
-</table>
+
+   <div class="content_box">
+		<table>
+		  <tr>
+			  <td>
+				<div id="imageFrame"> 
+					<img id="profileImage" align="left" src="https://robcm.github.io/Websites/personal-portfolio/res/MyprofileImage.png">
+				</div>
+			  </td>
+			  <td>
+				<div id="Contenido"> 
+					<h5 id="bio">My name is Robert Coleman a passionate software developer from Austin TX. Some of the programming languages I have work with include Java and C++. I also have experience developing Android apps and websites using Java, JavaScript, HTML, PHP, SQL, jQuery, and CSS.</h5>
+				</div>
+			  </td>
+		  </tr>
+		</table>
+	</div>
 
 <ul id="divider"><h3 id="protext">Projects!</h3></ul>
 
-<!--My projects -->
-<table id="contente_table">
-   <tr>
-		<td>
-			<a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank"><img id="imageOne" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Firstapp.png"></a> 
-	    </td>
-		<td>
-			<a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank"><img id="imageTwo" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Secondapp.png"></a>
-		</td>
-		<td>
-			<a href="https://robcm.github.io/survey-form" target="_blank"><img id="imageThree" class="projectImages" src="https://raw.githubusercontent.com/RobCM/survey-form/master/WebpageScreen_Shot.jpg"></a>
-		</td>
-   </tr>
-   <tr>
-		<td>
-			<a href="https://robcm.github.io/Websites/random-quote-machine" target="_blank"><img id="imageFour" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/RandQM.png"></a>
-		</td>
-		<td>
-			<a href="https://robcm.github.io/Websites/twitchtv-json-api" target="_blank"><img id="imageFive" class="projectImages" src="https://robcm.github.io/Websites/twitchtv-json-api/websiteScreen_Shot.png"></a>
-		</td>
-		<td>
-			<a href="https://github.com/RobCM/A-Java-weather-parser-RSS-feed" target="_blank"><img id="imageSix" class="projectImages" src="https://raw.githubusercontent.com/RobCM/A-Java-weather-parser-RSS-feed/master/Screen%20Shots/ProgramScreenS_1.png"></a>
-		</td>
-	</tr>
-</table> 
+	<!--My projects -->
+	<div class="content_box">
+		<table id="contente_table">
+		   <tr>
+				<td>
+					<a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank"><img id="imageOne" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Firstapp.png"></a> 
+				</td>
+				<td>
+					<a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank"><img id="imageTwo" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Secondapp.png"></a>
+				</td>
+				<td>
+					<a href="https://robcm.github.io/survey-form" target="_blank"><img id="imageThree" class="projectImages" src="https://raw.githubusercontent.com/RobCM/survey-form/master/WebpageScreen_Shot.jpg"></a>
+				</td>
+		   </tr>
+		   <tr>
+				<td>
+					<a href="https://robcm.github.io/Websites/random-quote-machine" target="_blank"><img id="imageFour" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/RandQM.png"></a>
+				</td>
+				<td>
+					<a href="https://robcm.github.io/Websites/twitchtv-json-api" target="_blank"><img id="imageFive" class="projectImages" src="https://robcm.github.io/Websites/twitchtv-json-api/websiteScreen_Shot.png"></a>
+				</td>
+				<td>
+					<a href="https://github.com/RobCM/A-Java-weather-parser-RSS-feed" target="_blank"><img id="imageSix" class="projectImages" src="https://raw.githubusercontent.com/RobCM/A-Java-weather-parser-RSS-feed/master/Screen%20Shots/ProgramScreenS_1.png"></a>
+				</td>
+			</tr>
+		</table> 
+	</div>
 
    <ul id="theBar"> 
      <h6 align="center">Personal Portfolio 2021</h6>

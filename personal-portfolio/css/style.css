@@ -29,8 +29,8 @@ h6{
 	background-color:#282828;
 	background-size:16px 16px;   
 }
-#icon{
-    height: 40px;
+.icon{
+    height: 60px;
     width: 10%;
 }
 #icon:hover{

@@ -19,10 +19,9 @@ h6{
 	width: 100px;
 }
 #theBar{ 
-    border-radius: 100px;
     padding: 15px; 
-    width: 800px;
-    height: 60px;
+    width: 100%;
+    height: 85px;
     background: radial-gradient(black 15%, transparent 16%) 0 0,radial-gradient(black 15%, transparent 16%) 8px 8px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
@@ -48,12 +47,20 @@ h6{
 	height: 150px; 
 	background: White; 
 	position: relative; 
+	padding: 10px;
 	-moz-border-radius: 10px; 
 	-webkit-border-radius: 10px; 
 	border-radius: 10px; 
 } 
 #Contenido:before { 
 	content:""; position: absolute; right: 100%; top: 26px; width: 0; height: 0; border-top: 13px solid transparent; border-right: 26px solid White; border-bottom: 13px solid transparent; 
+}
+#Titulo {
+	margin: auto;
+	text-align: center;
+}
+.content_box {
+	margin: auto;
 }
 #bio {
 	margin-left: 10px;
@@ -66,8 +73,7 @@ h6{
 }
 #divider {
 	padding: 5px;
-    border-radius: 10px;  
-    width: 800px;
+    width: 100%;
     height: 40px;
     background: radial-gradient(black 15%, transparent 6%) 0 0,radial-gradient(black 15%, transparent 6%) 8px 8px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,

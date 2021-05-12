@@ -1,114 +1,111 @@
-body{
-   margin:  0 auto;
-   height: 1000px;
-   width: 1024px;
-   background-color:#282828;   
+* {
+	box-sizing: border-box;
 }
-div{
-    margin:  0 auto;
+.header {
+	background-color: #f1f1f1;
+	padding: 15px;
 }
-h3 {
-    font-family: Fruktur;
-    color: White;
-	text-align: center;   
-}
-h6{
+#container {
+	overflow:auto;
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(74,82,82,0.9948354341736695) 92%, rgba(78,94,94,1) 100%);
 	color: white;
 }
-#contente_table {
-	width: 100px;
+.menu {
+	float: left;
+	width: 20%;
 }
-#theBar{ 
-    padding: 15px; 
-    width: 100%;
-    height: 85px;
-    background: radial-gradient(black 15%, transparent 16%) 0 0,radial-gradient(black 15%, transparent 16%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color: #4d4848;
-	background-size: 16px 16px;   
+.menuitem {
+	padding: 8px;
+	margin-top: 7px;
+	border-bottom: 1px solid #f1f1f1;
 }
-.icon{
-    height: 60px;
-    width: 10%;
+.main {
+	float: left;
+	width: 60%;
+	padding: 20px;
+	overflow: hidden;
 }
-#icon:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+.projects {
+	display: flex;
 }
-.projectImages:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+.project_item {
+	padding-right: 10px;
 }
-#Contenido { 
-	width: 590px; 
-	height: 170px; 
-	background: White; 
-	position: relative; 
-	padding: 10px;
-	-moz-border-radius: 10px; 
-	-webkit-border-radius: 10px; 
-	border-radius: 10px; 
-	font-family: 'Sriracha', cursive;
-} 
-#Contenido:before { 
-	content:""; position: absolute; right: 100%; top: 26px; width: 0; height: 0; border-top: 13px solid transparent; border-right: 26px solid White; border-bottom: 13px solid transparent; 
+.item_image {
+	height: 350px;
 }
-#Titulo {
-	margin: auto;
+.images {
+	width: 30%;
+}
+#profile_image {
+	border: 6px solid #f1f1f1;
+	border-radius: 100%;
+}
+.right {
+	float: left;
+	width: 20%;
+	padding: 10px 15px;
+	background-color: black;
+	opacity: 0.5;
+}
+.container {
+	width: 100%;
+	padding-bottom: 5px;
+}
+.skills {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	color: white;
+	background-color: #506F9E;
+}
+.html {
+	width: 100%;
+}
+.css {
+	width: 85%; 
+}
+.js {
+	width: 95%; 
+}
+.php {
+	width: 95%;	
+}
+.java {
+	width: 93%;
+}
+.c_plus {
+	width: 50%;	
+}
+.skills sql {
+	width: 98%;	
+}
+.footer {
+	background-color: #f1f1f1;
 	text-align: center;
+	padding: 10px;
+	margin-top: 7px;
+	font-size: 14px;
 }
-.content_box {
-	margin: auto;
-}
-#bio {
-	margin-left: 10px;
-}
-#profileImage {
-    width: 200px;
-    height: 170px;
-    background: #282828;
-    filter: grayscale(100%);
-}
-#divider {
-	padding: 5px;
+
+@media only screen and (max-width:800px) {
+  /* For tablets */
+  .main {
+    width: 80%;
+    padding: 10px;
+  }
+  .right {
     width: 100%;
-    height: 40px;
-    background: radial-gradient(black 15%, transparent 6%) 0 0,radial-gradient(black 15%, transparent 6%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color: #4d4848;
-	background-size: 16px 16px; 
+  }
+  .projects {
+	display: block;
+  }
 }
-#imageOne { 
-	margin: 0.9px;
-	width: 300px; 
-	height: 300px; 
-} 
-#imageTwo { 
-	margin: 0.9px;
-	width: 250px;
-	height: 300px;
-}
-#imageThree { 
-	margin: 0.9px;
-	width: 250px;
-	height: 300px;
-}
-#imageFour { 
-	margin: 0.9px;
-	width: 300px;
-	height: 300px;
-}
-#imageFive { 
-	margin: 0.9px;
-	width: 250px;
-	height: 300px;
-}
-#imageSix {
-	margin: 0.9px;
-	width: 250px;
-	height: 300px;
+@media only screen and (max-width:500px) {
+  /* For mobile phones */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }

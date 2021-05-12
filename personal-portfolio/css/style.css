@@ -79,8 +79,11 @@
 .c_plus {
 	width: 50%;	
 }
-.skills sql {
+.sql {
 	width: 98%;	
+}
+.android {
+	width: 90%;	
 }
 .footer {
 	background-color: #f1f1f1;

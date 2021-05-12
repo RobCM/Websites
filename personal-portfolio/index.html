@@ -1,110 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
-  <title>Personal Portfolio</title>
-   
+  <title>Personal Portfolio</title> 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
   <link rel="stylesheet" href="css/style.css">
-  
 </head>
-
 <body>
 
-<!-- Import fonts from Google-->
-<link href="https://fonts.googleapis.com/css?family=Fruktur" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() { 
 
+}); 
+</script>
 
-  <script>
-  $(document).ready(function() 
-  { 
-    // Title animation
-    var Ti = $("#Titulo_text");
-        Ti.animate({fontSize: '5.6em'}, 700);
-    // Fade project images
-    $('#imageOne').fadeOut(0.1).fadeIn(1500);
-    $('#imageTwo').fadeOut(0.1).delay(1000).fadeIn(1500);
-    $('#imageThree').fadeOut(0.1).delay(2000).fadeIn(1500);
-    $('#imageFour').fadeOut(0.1).delay(2500).fadeIn(1500);
-    $('#imageFive').fadeOut(0.1).delay(2900).fadeIn(1500);
-	$('#imageSix').fadeOut(0.1).delay(2950).fadeIn(1500);
-   }); 
-  </script>
-
- <div class="container-fluid">
-   <div class="row">
-	 <div id="Titulo">
-		<p><h3 id="Titulo_text" class="color-text">Software Developer</h3></p>
-	 </div>
-    
-   <ul id="theBar">
-      <a href= http://www.linkedin.com/in/robert-coleman-71a082b2 target="_blank">
-      <img class="icon" align="right" src="https://robcm.github.io/Websites/personal-portfolio/res/linkInicon.png
-" hspace="10"> 
-      </a>
-       <a href=https://github.com/RobCM  target="_blank">
-      <img class="icon" align="right" src="https://robcm.github.io/Websites/personal-portfolio/res/gitHubIcon.png
-" hspace="10"> 
-     </a>
-   </ul>
-
-   <div class="content_box">
-		<table>
-		  <tr>
-			  <td>
-				<div id="imageFrame"> 
-					<img id="profileImage" align="left" src="https://robcm.github.io/Websites/personal-portfolio/res/MyprofileImage.png">
-				</div>
-			  </td>
-			  <td>
-				<div id="Contenido"> 
-					<h5 id="bio">My name is Robert Coleman a passionate software developer from Austin TX. Front and back end experience (full stack) developing web applications using the LAMP stack.  
-					I also have experience developing Android applications using the Android Studio IDE. These applications are a combination of Java code and full stack web structure.</h5>
-				</div>
-			  </td>
-		  </tr>
-		</table>
-	</div>
-
-<ul id="divider"><h3 id="protext">Projects!</h3></ul>
-
-	<!--My projects -->
-	<div class="content_box">
-		<table id="contente_table">
-		   <tr>
-				<td>
-					<a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank"><img id="imageOne" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Firstapp.png"></a> 
-				</td>
-				<td>
-					<a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank"><img id="imageTwo" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/Secondapp.png"></a>
-				</td>
-				<td>
-					<a href="https://robcm.github.io/Websites/Technical-Documentation-Page/" target="_blank"><img id="imageThree" class="projectImages" src="https://raw.githubusercontent.com/RobCM/Websites/master/Technical-Documentation-Page/argos_page_screenshot.png"></a>
-				</td>
-		   </tr>
-		   <tr>
-				<td>
-					<a href="https://robcm.github.io/Websites/random-quote-machine" target="_blank"><img id="imageFour" class="projectImages" src="https://robcm.github.io/Websites/personal-portfolio/res/RandQM.png"></a>
-				</td>
-				<td>
-					<a href="https://github.com/RobCM/php_easy_build_framework" target="_blank"><img id="imageFive" class="projectImages" src="https://raw.githubusercontent.com/RobCM/php_easy_build_framework/master/images/php_easy_build_framework_logo.png"></a>
-				</td>
-				<td>
-					<a href="https://github.com/RobCM/A-Java-weather-parser-RSS-feed" target="_blank"><img id="imageSix" class="projectImages" src="https://raw.githubusercontent.com/RobCM/A-Java-weather-parser-RSS-feed/master/Screen%20Shots/ProgramScreenS_1.png"></a>
-				</td>
-			</tr>
-		</table> 
-	</div>
-
-   <ul id="theBar"> 
-     <h6 align="center">Personal Portfolio 2021</h6>
-   </ul>
-
+<div class="header">
+  <h1>Robert Coleman</h1>
+  <h3>Software Developer</h3>
+</div>
+<div id="container">
+  <div class="menu">
+	<div class="menuitem"> <img class="images" id="profile_image" src="res/MyprofileImage.png"></div>
+    <div class="menuitem"> <a href="https://github.com/RobCM" target="_blank"><img class="images" src="res/gitHubIcon.png"></a></div>
+    <div class="menuitem"> <a href="http://www.linkedin.com/in/robert-coleman-71a082b2" target="_blank"><img class="images" src="res/linkInicon.png"></a></div>
   </div>
+  <div class="main">	
+		<p>
+			Passionate software developer from Austin TX. Front and back end experience (full stack) developing web applications using the LAMP stack. 
+			Also have experience developing Android and desktop applications using various programing langues. 
+		</p>
+		<h1>Projects</h1>		
+		<div class="projects">
+			<div class="project_item"><a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank">
+				<img class="item_image" src="res/Firstapp.png"></a>
+			</div>
+			<div class="project_item"><a href="https://github.com/RobCM/php_easy_build_framework" target="_blank">
+				<img class="item_image" src="https://raw.githubusercontent.com/RobCM/php_easy_build_framework/master/images/php_easy_build_framework_logo.png"></a>
+			</div>
+			<div class="project_item"><a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank">
+				<img class="item_image" src="res/Secondapp.png"></a>
+			</div>
+		</div>
+  </div>
+  <div class="right">
+		<h1>Skills</h1>
+		<p>JavaScript</p>
+		<div class="container">
+		  <div class="skills js">95%</div>
+		</div>
+
+		<p>PHP</p>
+		<div class="container">
+		  <div class="skills php">95%</div>
+		</div>
+		
+		<p>JAVA</p>
+		<div class="container">
+		  <div class="skills java">93%</div>
+		</div>
+		
+		<p>SQL</p>
+		<div class="container">
+		  <div class="skills sql">98%</div>
+		</div>
+		
+		<p>C++</p>
+		<div class="container">
+		  <div class="skills c_plus">50%</div>
+		</div>
+		
+		<p>CSS</p>
+		<div class="container">
+		  <div class="skills css">85%</div>
+		</div>
+		
+		<p>HTML</p>
+		<div class="container">
+		  <div class="skills html">100%</div>
+		</div>
+  </div>
+</div>
+
+<div class="footer"> 
+	Portfolio 2021
 </div>
   
 </body>

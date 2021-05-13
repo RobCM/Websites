@@ -26,13 +26,17 @@
 	padding: 20px;
 	overflow: hidden;
 }
-.projects {
-	display: flex;
-}
 .project_item {
 	padding-right: 10px;
+	display: flex;
+	width: 60%;
+}
+.project_item_disc{
+	padding-left: 25px;
+	padding-top: 65px;
 }
 .item_image {
+	width: 255px;
 	height: 350px;
 }
 .images {
@@ -92,9 +96,9 @@
 	margin-top: 7px;
 	font-size: 14px;
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   /* For mobile phones */
-  .menu, .main, .right, .projects{
+  .menu, .main, .right, .projects, .project_item {
     width: 100%;
 	display: block;
   }

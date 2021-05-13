@@ -10,9 +10,18 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function() { 
 
-}); 
+	$(window).resize(function() {
+	  if ($(this).width() < 500) {
+		$(".project_item_disc").html("");
+	  } 
+	  else{
+	    $("#disc_1").html("Android application for cooking recipes and supermarket finder.");
+		$("#disc_2").html("PHP framework for fast creation of web applications. Similar to Wordpress framework.");
+		$("#disc_3").html("Andriod application for tourism in Texas.");
+	  }
+	});
+
 </script>
 
 <div class="header">
@@ -32,14 +41,19 @@ $(document).ready(function() {
 		</p>
 		<h1>Projects</h1>		
 		<div class="projects">
-			<div class="project_item"><a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank">
-				<img class="item_image" src="res/Firstapp.png"></a>
+			<div class="project_item">
+				<div><a href="https://play.google.com/store/apps/details?id=rcoleman.rasmussencollege.com.cook_it_now" target="_blank"><img class="item_image" src="res/Firstapp.png"></a></div>
+				<div class="project_item_disc" id="disc_1">	Android application for cooking recipes and supermarket finder.</div>
 			</div>
-			<div class="project_item"><a href="https://github.com/RobCM/php_easy_build_framework" target="_blank">
-				<img class="item_image" src="https://raw.githubusercontent.com/RobCM/php_easy_build_framework/master/images/php_easy_build_framework_logo.png"></a>
+			<br>
+			<div class="project_item">
+				<div><a href="https://github.com/RobCM/php_easy_build_framework" target="_blank"><img class="item_image" src="https://raw.githubusercontent.com/RobCM/php_easy_build_framework/master/images/php_easy_build_framework_logo.png"></a></div>
+				<div class="project_item_disc" id="disc_2">	PHP framework for fast creation of web applications. Similar to Wordpress framework.</div>
 			</div>
-			<div class="project_item"><a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank">
-				<img class="item_image" src="res/Secondapp.png"></a>
+			<br>
+			<div class="project_item">
+				<div><a href="https://play.google.com/store/apps/details?id=robertc.apps.abouttx" target="_blank"><img class="item_image" src="res/Secondapp.png"></a></div>
+				<div class="project_item_disc" id="disc_3">	Andriod application for tourism in Texas.</div>
 			</div>
 		</div>
   </div>

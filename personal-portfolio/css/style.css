@@ -96,10 +96,9 @@
 	margin-top: 7px;
 	font-size: 14px;
 }
-@media only screen and (max-width: 700px) {
-  /* For mobile phones */
-  .menu, .main, .right, .projects, .project_item {
-    width: 100%;
+@media only screen and (max-width:500px) {
+  .header, .container, .menu, .main, .right, .projects, .project_item {
 	display: block;
+    width: 100%;
   }
 }

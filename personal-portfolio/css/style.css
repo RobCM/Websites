@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 * {
 	box-sizing: border-box;
 }
 .header {
 	background-color: #f1f1f1;
 	padding: 15px;
+}
+h1 {
+	font-style: oblique;
+	font-family: 'Righteous', cursive;
+	color: #506F9E;
+}
+h3 {
+	font-style: oblique;
+	font-weight: bold;
 }
 #container {
 	overflow:auto;
